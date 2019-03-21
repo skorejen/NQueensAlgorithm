@@ -23,7 +23,6 @@ public class QueenSolver {
     }
 
     private boolean solve(int columnNumber, int row) {
-        System.out.println(toString());
         boolean flag= false;
 
         if (columnNumber >= grid.length) {

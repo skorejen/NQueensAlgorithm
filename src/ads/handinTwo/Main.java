@@ -7,9 +7,11 @@ public class Main {
         if(args.length > 0){
         queenNo = Integer.parseInt(args[0]);
         } else {
-            queenNo = 5;
+            queenNo = 12;
         }
         QueenSolver q = new QueenSolver(queenNo);
+        long a = System.currentTimeMillis();
         System.out.println(q.getSolutions());
+        System.out.println(System.currentTimeMillis()-a);
     }
 }
